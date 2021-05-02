@@ -1,6 +1,35 @@
 # tf2-speaker-recognition
 
+
+## Installation
+
+Install docker, nvidia-docker.
+
 ### Docker container
 
-#### Building tensorflow 2 from source (docker)
-**N.B: If you have an old NVIDIA driver like me, you may need to build tensorflow from source. You can skip this part.**
+#### CUDA 9.0
+**N.B:** If you have an old NVIDIA driver like me (which I can't change :disappointed: as some other docker containers are running which depends on that version), you may need to build tensorflow from source. I have used a version for cuda 9 which is available here: [tensorflow 2.1 python 3.7 cuda 9.0 wheel](https://drive.google.com/file/d/1JtxGVpJQAIRxEzdIyIQsGY0axU0a0ISo/view)
+
+`pip install gdown`
+
+`gdown https://drive.google.com/uc?id=1JtxGVpJQAIRxEzdIyIQsGY0axU0a0ISo`
+
+#### Using docker container
+
+`docker pull nvidia/cuda:9.0-cudnn7-devel`
+
+`nvidia-docker run -it -v path_in_drive:mapping_in_docker --net=host nvidia/cuda:9.0-cudnn7-devel bash`
+
+cd into mapped folder with git.
+
+`apt install unzip; unzip tensorflow-2.1.0-cp37-cp37m-linux_x86_64.whl.zip; apt install wget`
+
+`bash install_conda.sh; conda update conda`
+
+## Methods
+
+The source code is mostly taken from https://github.com/WeidiXie/VGG-Speaker-Recognition (python 2), which I re-wrote in python 3 with better documentation and some changes in model.
+
+
+## How code is organized?
+
