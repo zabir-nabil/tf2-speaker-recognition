@@ -41,6 +41,8 @@ cd into mapped folder with git.
 `conda activate tf2sr`
 
 `pip install -r reqs.txt`
+
+`apt-get install libsndfile1`
 ## Methods
 
 The source code is mostly taken from https://github.com/WeidiXie/VGG-Speaker-Recognition (python 2), which I re-wrote in python 3 with better documentation and some changes in model.
