@@ -16,6 +16,10 @@ import ctypes
 ctypes.CDLL("libgomp.so.1", mode=ctypes.RTLD_GLOBAL)
 ```
 
+```
+apt-get install libav-tools # if you want to read .m4a files
+```
+
 `pip install gdown`
 
 `gdown https://drive.google.com/uc?id=1JtxGVpJQAIRxEzdIyIQsGY0axU0a0ISo`
@@ -49,4 +53,6 @@ The source code is mostly taken from https://github.com/WeidiXie/VGG-Speaker-Rec
 
 
 ## How code is organized?
+
+To train, `python -W ignore train.py` # set the params inside 
 

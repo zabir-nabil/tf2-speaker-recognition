@@ -131,3 +131,5 @@ dmypy.json
 # tf wheels
 *.zip
 *.whl
+
+*.h5

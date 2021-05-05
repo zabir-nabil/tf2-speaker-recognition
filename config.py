@@ -8,4 +8,10 @@ class Config:
 
             }
 
+            self.train_map = {
+                "voxclb2_train": "test/voxlb2_train.txt",
+                "voxclb2_val": "test/voxlb2_val.txt",
+
+            }
+
             self.result_path = "test/results"
