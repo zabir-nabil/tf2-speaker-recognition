@@ -20,7 +20,7 @@ import argparse
 parser = argparse.ArgumentParser()
 # set up training configuration.
 parser.add_argument('--gpu', default='', type=str)
-parser.add_argument('--resume', default='', type=str)
+parser.add_argument('--resume', default='baseline_weights/weights.h5', type=str)
 parser.add_argument('--batch_size', default=1, type=int)
 parser.add_argument('--data_path', default='/Erfan/Audio/voxceleb2/dev/aac', type=str)
 parser.add_argument('--multiprocess', default=12, type=int)
