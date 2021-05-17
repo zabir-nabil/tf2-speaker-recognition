@@ -44,7 +44,9 @@ cd into mapped folder with git.
 
 `conda activate tf2sr`
 
-`pip install -r reqs.txt`
+`pip install -r reqs.txt` 
+
+`pip uninstall h5py; pip install 'h5py<3.0.0'` # old bug
 
 `apt-get install libsndfile1`
 ## Methods
@@ -54,5 +56,7 @@ The source code is mostly taken from https://github.com/WeidiXie/VGG-Speaker-Rec
 
 ## How code is organized?
 
-To train, `python -W ignore train.py` # set the params inside 
+To train, `python -W ignore train.py` # set the params inside
+
+`python -W ignore train.py --resume baseline_weights/weights.h5`
 

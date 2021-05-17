@@ -38,6 +38,16 @@ class VladPooling(tf.keras.layers.Layer):
                                        initializer='orthogonal')
         self.built = True
 
+    def get_config(self):
+
+        config = super().get_config().copy()
+        config.update({
+            'mode': self.mode,
+            'k_centers': self.k_centers,
+            'g_centers': self.g_centers
+        })
+        return config
+
     def compute_output_shape(self, input_shape):
         assert input_shape
         return (input_shape[0][0], self.k_centers*input_shape[0][-1])
