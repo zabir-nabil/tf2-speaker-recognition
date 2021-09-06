@@ -22,7 +22,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--gpu', default='', type=str)
 parser.add_argument('--resume', default='baseline_weights/weights.h5', type=str)
 parser.add_argument('--batch_size', default=1, type=int)
-parser.add_argument('--data_path', default='/Erfan/Audio/voxceleb2/dev/aac', type=str)
+parser.add_argument('--data_path', default='/Audio/voxceleb2/dev/aac', type=str)
 parser.add_argument('--multiprocess', default=12, type=int)
 # set up network configuration.
 parser.add_argument('--net', default='resnet34s', choices=['resnet34s', 'resnet34l'], type=str)

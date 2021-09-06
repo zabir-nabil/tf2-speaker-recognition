@@ -1,6 +1,6 @@
 import glob
 import random
-root_path = "/Erfan/Audio/voxceleb1/wav"
+root_path = "/Audio/voxceleb1/wav"
 f = open("test/voxceleb1_veri_test.txt", "w")
 
 data_dict = {}

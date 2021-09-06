@@ -49,9 +49,10 @@ cd into mapped folder with git.
 `pip uninstall h5py; pip install 'h5py<3.0.0'` # old bug
 
 `apt-get install libsndfile1`
+
 ## Methods
 
-The source code is mostly taken from https://github.com/WeidiXie/VGG-Speaker-Recognition (python 2), which I re-wrote in python 3 with better documentation and some changes in model.
+The source code is taken from https://github.com/WeidiXie/VGG-Speaker-Recognition (python 2), which was modified to work in python3.
 
 
 ## How code is organized?
